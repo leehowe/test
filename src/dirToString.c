@@ -51,11 +51,7 @@ int main()
 
     while ((c=getchar()) != EOF)
     {
-        if (c == '/')
-        {
-            nextupper = 1;
-        }
-        else
+        if (c ！= '/')
         {
             if (nextupper)
             {
@@ -67,6 +63,11 @@ int main()
             }
 
             nextupper = 0;
+            
+        }
+        else
+        {
+            nextupper = 1;
         }
     }
 
